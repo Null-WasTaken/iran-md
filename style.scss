@@ -1,0 +1,89 @@
+$background: #000;
+$secondary-bg: #121212;
+$heading-color: #F5C518;
+
+@font-face {
+    font-family:IR-sans;
+    src: url(./Assets/Fonts/A-Iranian-Sans/Iranian-Sans.ttf);
+}
+
+@mixin FlexBox($dir) {
+    display: flex;
+    flex-direction: $dir;
+}
+
+.v-line {
+    width: 2px;
+    height: 30px;
+    background: #383838;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: $background;
+    color: #fff;
+
+    font-family: IR-sans , sans-serif;
+}
+
+.container {
+    margin: auto;
+}
+
+.nav {
+    @include FlexBox(row-reverse);
+    align-items: center;
+    justify-content: space-around;
+    background: $secondary-bg;
+    height: 50px;
+
+    &-ls {
+        @include FlexBox(row);
+        align-items: center;
+    
+        div {
+            @include FlexBox(row);
+            align-items: center;
+        }
+        a {
+            font-size: 1rem;
+            line-height: 10px;
+            padding-left: 2px;
+            padding-right: 20px;
+            text-decoration: none;
+            color: #fff;
+            text-align: center;
+        }
+    }
+
+    &-rs {
+        @include FlexBox(row-reverse);
+        align-items: center;
+
+        img {
+            margin: 0 20px 0 20px;
+            width: 60px;
+        }
+
+        &-hamburger {
+            cursor: pointer;
+
+        }
+
+        input {
+            min-width: 700px;
+            border: none;
+            background: #fff;
+            height: 35px;
+            border-radius: 5px;
+            color: #000;
+            text-align: right;
+            margin: 0 20px 0 20px;
+        }
+
+    }
+
+}

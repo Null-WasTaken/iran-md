@@ -1,0 +1,72 @@
+@font-face {
+  font-family: IR-sans;
+  src: url(./Assets/Fonts/A-Iranian-Sans/Iranian-Sans.ttf);
+}
+.v-line {
+  width: 2px;
+  height: 30px;
+  background: #383838;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #000;
+  color: #fff;
+  font-family: IR-sans, sans-serif;
+}
+
+.container {
+  margin: auto;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+  background: #121212;
+  height: 50px;
+}
+.nav-ls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav-ls div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav-ls a {
+  font-size: 1rem;
+  line-height: 10px;
+  padding-left: 2px;
+  padding-right: 20px;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+.nav-rs {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.nav-rs img {
+  margin: 0 20px 0 20px;
+  width: 60px;
+}
+.nav-rs-hamburger {
+  cursor: pointer;
+}
+.nav-rs input {
+  min-width: 700px;
+  border: none;
+  background: #fff;
+  height: 35px;
+  border-radius: 5px;
+  color: #000;
+  text-align: right;
+  margin: 0 20px 0 20px;
+}/*# sourceMappingURL=style.css.map */
