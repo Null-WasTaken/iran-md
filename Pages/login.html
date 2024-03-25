@@ -7,22 +7,34 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="form"></div>
-        <div class="switcher">
+    <div class="login-container">
+        <div class="form">
+        <div class="form-switcher">
+            <div class="form-switcher-login">
             <h2 class="log-in">ورود</h2>
-            <h2>|</h2>
-            <h2 class="sign-up">ثبت نام</h2>
+            </div>
+            <h3>|</h3>
+            <div class="form-switcher-sign-up not-active">
+                <h2 class="sign-up">ثبت نام</h2>
+            </div>
         </div>
-        <div class="login">
+        <div class="form-login">
             <form action="#" method="get">
+                <div>      
+                <span>ایمیل</span>
                 <input type="text" name="user-name">
-                <input type="password" name="password">
-                <button>LogIn</button>
+                </div>
+
+                <div>    
+                    <span>پسورد</span>
+                    <input type="password" name="password">
+                    </div>
+                <a href="#">پسورد خود را فراموش کرده اید؟</a>
+                <button>ورود</button>
             </form>
         </div>
 
-        <div class="signup">
+        <!-- <div class="signup">
             <form action="#" method="get">
                 <input type="text" name="full-name">
                 <input type="email" name="email">
@@ -30,6 +42,7 @@
                 <input type="password" name="password">
                 <button>SignUp</button>
             </form>
+        </div> -->
         </div>
     </div>
 </body>
