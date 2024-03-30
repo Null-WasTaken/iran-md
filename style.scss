@@ -18,6 +18,10 @@ $heading-color: #F5C518;
     background: #383838;
 }
 
+.none {
+    display: none !important;
+}
+
 
 body {
     margin: 0;
@@ -88,6 +92,18 @@ body {
 
 }
 
+
+.hero {
+    margin: auto;
+    width: 80%;
+    margin-top: 40px;
+    @include FlexBox(row-reverse);
+    text-align: right;
+
+    
+
+}
+
 // Login Form Styles
 
 .login-container {
@@ -100,7 +116,7 @@ body {
 
 .form {
     width: 400px;
-    height: 450px;
+    height: 480px;
     border-radius: 20px;
     @include FlexBox(column);
     align-items: center;
@@ -156,7 +172,7 @@ body {
 
     }
 
-    &-login {
+    &-login , &-signup {
         @include FlexBox(column);
         width: 100%;
         height: 300px;
@@ -175,6 +191,7 @@ body {
                 border-radius: 6px;
                 font-size: 1rem;
                 cursor: pointer;
+                margin-top: 10px;
             }
 
             a {
@@ -185,6 +202,7 @@ body {
             div {
                 @include FlexBox(column);
                 text-align: right;
+                margin-top: 7px;
 
                 span {
                     color: $heading-color;
